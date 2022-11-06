@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #121212;
+}
+
+/* Login Design */
+.login-whole-screen{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    padding: 25px;
+    border: 0.25px solid black;
+    border-radius: 15px;
+}
+
+.login-container h1{
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-container form input{
+    width: 350px;
+    padding: 8px 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    border: 0.125px solid black;
+    border-radius: 10px;
+}
+
+.login-container form button{
+    color: white;
+    width: 150px;
+    padding: 8px;
+    font-size: 18px;
+    margin: 10px 0;
+    border: 0.125px solid black;
+    background: black;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.login-container form button:hover{
+    color: black;
+    border: 0.125px solid black;
+    background: white;
+}
+
+
+
+
+
+/* Navigation UI */
+.left-navigation-bar{
+    height: 100vh;
+    width: 18vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    background-color: var(--nav-bg);
+}
+
+.left-navigation-bar .img-box{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.left-navigation-bar .img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.left-navigation-bar .name, .left-navigation-bar .email{
+    text-align: center;
+}
+
+.left-navigation-bar .name{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.left-navigation-bar .email{
+    font-size: 18px;
+    word-break: break-all;
+    font-weight: 400;
+}
+
+.left-navigation-bar a{
+    text-decoration: none;
+}
+
+a{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.nav-link{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10);
+}
+
+.nav-link img{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-link h1{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+
+
+/* Home Screen */
+.home-whole-screen{
+    display: flex;
+    flex-direction: row;
+}
+
+.home-content{
+    padding: 15px;
+}
+
+.home-content .greeting{
+    font-size: 28px;
+}
+
+.home-content .doctorName{
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--nav-bg);
+}
+
+.home-content .quote{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.home-heading{
+    font-size: 25px;
+    color: black;
+    margin-top: 30px;
+}
+
+.home-appointment-list{
+    margin-left: 15px;
+}
+
+.home-appointment-request{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-patient-name{
+    width: 55%;
+    font-size: 20px;
+}
+
+.home-appointment-dec{
+    width: 18%;
+    border-radius: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancel{
+    background: red;
+}
+
+.approve{
+    background: var(--nav-bg);
+}
+
+
+.showAndChangeBeds{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.available-beds{
+    width: 70%;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.changeBeds{
+    width: 30%;
+    border-radius: 20px;
+    background-color: var(--nav-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15px;
+    text-decoration: none;
+}
